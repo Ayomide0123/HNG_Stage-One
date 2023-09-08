@@ -51,8 +51,8 @@ a[data-testid="“githubURL”"] {
 a[data-testid="“githubURL”"]:visited {
   color: rgb(18, 61, 144);
 }
-a[data-testid="“githubURL”"]:hover,
-a:focus {
+a[data-testid="“githubURL”"]:hover, 
+a[data-testid="“githubURL”"]:focus{
   color: rgb(93, 140, 234);
 }
 a[data-testid="“githubURL”"]:active {
