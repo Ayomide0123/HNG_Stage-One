@@ -24,8 +24,7 @@ main {
 h2[data-testid="slackUserName"],
 h3[data-testid="currentDayOfTheWeek"],
 h3[data-testid="currentUTCTime"],
-h3[data-testid="myTrack"],
-h2 {
+h3[data-testid="myTrack"] {
   color: rgb(203, 219, 233);
 }
 
