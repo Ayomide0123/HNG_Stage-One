@@ -15,6 +15,9 @@ body {
   min-height: 100vh;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -54,4 +57,42 @@ a:focus {
 }
 a[data-testid="“githubURL”"]:active {
   opacity: 0.8;
+}
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.77rem;
+  }
+  img[data-testid="slackDisplayImage"] {
+    width: 20%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    line-height: 2rem;
+  }
+  img[data-testid="slackDisplayImage"] {
+    width: 25%;
+    height: auto;
+  }
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  img[data-testid="slackDisplayImage"] {
+    width: 30%;
+    height: auto;
+  }
+  h3[data-testid="currentDayOfTheWeek"],
+  h3[data-testid="currentUTCTime"],
+  header {
+    text-align: center;
+  }
 }
