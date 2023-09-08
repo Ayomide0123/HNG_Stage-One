@@ -8,6 +8,9 @@ dayOfWeek.textContent = `Today is ${dayName}`;
 
 
 //Current UTC Time in Milliseconds
-const currentTimeInMilliseconds = new Date().getTime();
-const utcTime = document.querySelector('[data-testid="currentUTCTime"]');
-utcTime.textContent = `UTC Time in Milliseconds: ${currentTimeInMilliseconds}`;
+function currentTimeUTC(){
+    const currentTimeInMilliseconds = new Date().getTime();
+    const utcTime = document.querySelector('[data-testid="currentUTCTime"]');
+    utcTime.textContent = `UTC Time in Milliseconds: ${currentTimeInMilliseconds}`;
+}
+setInterval(currentTimeUTC, 1000);
