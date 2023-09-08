@@ -4,13 +4,13 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayIndex = currentDay.getDay();
 const dayName = daysOfWeek[dayIndex];
 const dayOfWeek = document.querySelector('[data-testid="currentDayOfTheWeek"]');
-dayOfWeek.textContent = `Today is ${dayName}`;
+dayOfWeek.textContent = `${dayName}`;
 
 
 //Current UTC Time in Milliseconds
 function currentTimeUTC(){
     const currentTimeInMilliseconds = new Date().getTime();
     const utcTime = document.querySelector('[data-testid="currentUTCTime"]');
-    utcTime.textContent = `UTC Time in Milliseconds: ${currentTimeInMilliseconds}`;
+    utcTime.textContent = `${currentTimeInMilliseconds}`;
 }
 setInterval(currentTimeUTC, 1000);
