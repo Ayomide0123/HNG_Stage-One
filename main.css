@@ -40,7 +40,7 @@ a[data-testid="“githubURL”"] {
   text-decoration: none;
 }
 a[data-testid="“githubURL”"]:visited {
-  color: rgb(18, 61, 144);
+  color: rgb(171, 117, 232);
   text-decoration: none;
 }
 a[data-testid="“githubURL”"]:hover,
