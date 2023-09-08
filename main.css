@@ -37,16 +37,20 @@ img[data-testid="slackDisplayImage"] {
 
 a[data-testid="“githubURL”"] {
   color: rgb(164, 190, 243);
+  text-decoration: none;
 }
 a[data-testid="“githubURL”"]:visited {
   color: rgb(18, 61, 144);
+  text-decoration: none;
 }
 a[data-testid="“githubURL”"]:hover,
 a[data-testid="“githubURL”"]:focus {
   color: rgb(93, 140, 234);
+  text-decoration: none;
 }
 a[data-testid="“githubURL”"]:active {
   opacity: 0.8;
+  text-decoration: none;
 }
 
 /* MEDIA QUERIES  */
